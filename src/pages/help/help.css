@@ -1,0 +1,38 @@
+.help_page{
+    margin-top: 170px;
+}
+.help_page .heading{
+    margin-top: 180px !important;
+}
+.help_page .heading svg{
+    font-size: 50px !important;
+}
+.help_page .description{
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+.help_page .description .img-box{
+    max-height: 200px;
+}
+.help_page .description .img-box img{
+    height: 100%;
+    object-fit: cover;
+}
+.help_page .column{
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+.help_page .footer{
+    padding: 15px 20px;
+    background-color: rgba(0, 119, 255, 0.104);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 119, 255, 0.153);
+    border: 1px solid rgba(0, 119, 255, 0.034);
+    margin-bottom: 15px;
+}

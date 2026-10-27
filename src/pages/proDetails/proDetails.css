@@ -1,0 +1,155 @@
+.pro-details {
+    gap: 40px;
+    margin-bottom: 50px;
+    margin-top: 160px;
+}
+
+.pro-details .images {
+    width: 40% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pro-details .images .image-box-lg img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.pro-details .images .sm-images img {
+    width: 25% !important;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.pro-details .details {
+    width: 40%;
+}
+
+.pro-details .details button {
+    width: fit-content;
+}
+
+.pro-details .details .icons {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.pro-details .details .icons div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #cccccc4a;
+    transition: .2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-details .details .icons div:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.pro-details .details .icons .chosen-item:hover {
+    background-color: #cccccc4a;
+}
+
+/* start loading */
+.loading {
+    margin-top: 200px !important;
+    margin-bottom: 50px;
+}
+
+.loading .images {
+    width: 30% !important;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.loading .images .lg-image {
+    width: 80%;
+    height: 100%;
+    background-color: #cccccc53;
+    border-radius: 10px;
+}
+
+.loading .details {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.loading .details p {
+    padding: 15px;
+    background-color: #cccccc53;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.loading-slider {
+    margin-top: 30px;
+}
+
+/* end loading */
+@media (max-width:768px) {
+    .pro-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pro-details .images {
+        width: 80% !important;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .pro-details .images .image-box-lg img {
+        height: 200px !important;
+
+    }
+ 
+
+    .pro-details .details {
+        width: 90% !important;
+        margin-bottom: 40px;
+    }
+
+    .loading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loading .images {
+        width: 80% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loading .images .lg-image {
+        width: 80%;
+    }
+
+    .loading .details {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .loading .details p {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+}

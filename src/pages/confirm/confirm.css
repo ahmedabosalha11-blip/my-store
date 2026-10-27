@@ -1,0 +1,170 @@
+.confirm {
+    margin-top: 170px;
+}
+
+.confirm .customer-info {
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+
+.confirm .customer-info .one {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm form input::placeholder {
+    opacity: .7;
+    transition: .3s;
+}
+
+.confirm form input:focus {
+    box-shadow: none;
+}
+
+.confirm form input:focus::placeholder {
+    opacity: 0;
+}
+
+.confirm .shipinng-address {
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+
+.confirm .shipinng-address .one {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirm .review-confirm{
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+.confirm .payment-method {
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+
+.confirm .payment-method .one {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm .payment-method label {
+    margin: 7px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+
+.confirm .payment-method label:has(input[type="radio"]:checked) {
+    background-color: #0d6dfd13;
+    border: 1px solid #0d6dfd78;
+}
+
+.confirm .payment-method img {
+    width: 40px;
+    object-fit: contain;
+}
+
+.confirm .payment-method .paypal {
+    width: 80px;
+}
+
+.confirm .summary {
+    height: fit-content;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+}
+
+.confirm .pro-section {
+    height: 170px;
+    overflow: hidden;
+    scrollbar-width: thin;
+}
+
+.confirm .pro-section:hover {
+    overflow-y: auto;
+}
+
+.confirm .pro-section::-webkit-scrollbar {
+    width: 6px;
+}
+
+.confirm .pro-section::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.confirm .pro-section::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.confirm .pro-section .pro .image-pro {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm .pro-section .pro {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #cccccc4b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+}
+
+.confirm .pro-section .pro .image-pro img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:575px){
+    .confirm .customer-info input{
+        width: 100% !important;
+    }
+    .confirm .customer-info .name-phone{
+        flex-direction: column;
+    }
+    .confirm .customer-info .full-name,
+    .confirm .customer-info .phone-number{
+        width: 100% !important;
+    }
+    .confirm .shipinng-address .shipping{
+        flex-direction: column;
+    }
+    .confirm .shipinng-address .shipping div{
+        width: 100% !important;
+    }
+}

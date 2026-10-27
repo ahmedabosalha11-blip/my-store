@@ -1,0 +1,111 @@
+:root{
+    --main-color:#0d6efd;
+    --hover-color:#cccccc2d;
+}
+
+.product{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
+}
+.product a{
+    height: 300px;
+}
+.product:hover{
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 10px #ccc;
+}
+.product a .info .title{
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+    color: black;
+}
+.product a .info .stars{
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+}
+.product a .info .price{
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+}
+.product a .info .stock{
+    color: black;
+}
+.product a .image-box{
+    width: 100%;
+    height: 50%;
+
+}
+.product a .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.product .icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: .3s;
+}
+.product:hover .icons{
+    right: 20px;
+}
+.product .icons div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #cccccc4a;
+    transition: .2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product .icons div:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.product .icons .chosen-item:hover{
+    background-color: #cccccc4a;
+}
+.product .in-cart{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.775) !important;
+}
+.product .in-cart .check{
+    font-size: 13px;
+    color: green;
+}
+.product .out-of-stock{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
+    color: red;
+}
+

@@ -1,0 +1,20 @@
+.contact{
+    margin-top: 170px;
+}
+.contact form textarea{
+    height: 150px;
+    
+}
+.contact form input:focus{
+    box-shadow: none;
+}
+.contact form textarea:focus{
+    box-shadow: none;
+}
+.footer{
+    background-color: rgba(0, 140, 255, 0.232);
+    padding: 10px 25px;
+}
+.row p{
+    text-transform: uppercase !important;
+}

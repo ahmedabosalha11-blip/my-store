@@ -1,0 +1,66 @@
+:root{
+    --main-color:#0d6efd;
+    --hover-color:#cccccc2d;
+}
+
+.parent{
+    width: 100%;
+    height: 2px;
+    background-color: #cccccc7f;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.parent .child{
+    width: 25%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+/* start loading */
+.loading .title{
+  padding: 15px;
+  width: 150px;
+  background-color: #cccccc53;
+  border-radius: 10px;
+}
+.loading .para{
+  padding: 15px;
+  width: 250px;
+  background-color: #cccccc53;
+  border-radius: 10px;
+}
+.loading .loading-div{
+  width: 150px;
+  flex-grow: 1;
+  height: 250px;
+  background-color: #cccccc53;
+  border-radius: 10px;
+}
+
+/* end loading */

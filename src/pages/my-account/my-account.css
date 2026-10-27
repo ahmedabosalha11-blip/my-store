@@ -1,0 +1,74 @@
+.my_account_page{
+    margin-top: 170px;
+}
+.profile{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+    padding: 10px;
+}
+.profile .image-box{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.activity{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+    padding: 10px;
+}
+.stats{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+    padding: 10px;
+}
+.stats p{
+    text-transform: capitalize !important;
+    font-weight: bold;
+}
+.orders{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+    padding: 10px;
+}
+.actions{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #cccccc4b;
+    border: 1px solid #cccccc87;
+    padding: 10px;
+}
+.actions .act{
+    padding: 10px;
+    border: 1px solid #078ded2c;
+    border-radius: 10px;
+    background-color: rgba(0, 145, 255, 0.086);
+}
+.payment{
+    background-color: white !important;
+    border: none !important;
+    padding: 0 !important;
+}
+.payment div{
+    background-color: rgba(0, 145, 255, 0.086);
+    border: 1px solid #078ded2c;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.payment div p{
+    text-transform: capitalize !important;
+}

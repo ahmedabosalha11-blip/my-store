@@ -1,0 +1,21 @@
+
+.hero{
+    margin-top: 170px !important;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    
+}
+.hero-section{
+    width: 100%;
+    height: fit-content;
+    background-image: url(../../img/bg.jpg);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width:575px) {
+    .hero-section{
+        flex-direction: column;
+    }
+}
