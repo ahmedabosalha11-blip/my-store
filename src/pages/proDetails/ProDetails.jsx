@@ -1,4 +1,4 @@
-import './proDetails.css';
+import styles from './proDetails.module.css';
 import ProDetailsLoading from './ProDetailsLoading';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
@@ -15,7 +15,7 @@ function ProDetails() {
     const [loading, setLoading] = useState(true);
     const [productCat, setProductCat] = useState([]);
     const [loadingCat, setLoadingCat] = useState(true);
-    const { cartItems, addFavItem, favItems, handelCart , renderRating } = useContext(cartContext);
+    const { cartItems, addFavItem, favItems, handelCart, renderRating } = useContext(cartContext);
     const boughtPro = cartItems.some(pro => pro.newpro.id == id);
     const boughtProStock = cartItems.find(pro => pro.newpro.id == id);
     const quantityInCart = boughtProStock ? boughtProStock.count : 0;
@@ -58,12 +58,12 @@ function ProDetails() {
     return (
         <PagesMotion key={id}>
             <div className='container my-5'>
-                <div className="pro-details d-flex w-100">
-                    <div className="images">
-                        <div className="image-box-lg">
+                <div className={`${styles['pro-details']} d-flex w-100`}>
+                    <div className={styles.images}>
+                        <div className={styles['image-box-lg']}>
                             <img id='lg-image' className='' src={product.images[0]} alt="" />
                         </div>
-                        <div className="sm-images d-flex align-items-center justify-content-evenly">
+                        <div className={`${styles['sm-images']} d-flex align-items-center justify-content-evenly`}>
                             {product.images.length > 1 ?
                                 <>
                                     {product.images.map((image, i) => {
@@ -75,7 +75,7 @@ function ProDetails() {
                             }
                         </div>
                     </div>
-                    <div className="details d-flex flex-column gap-3 mt-lg-5">
+                    <div className={`${styles.details} d-flex flex-column gap-3 mt-lg-5`}>
                         <h4 className='text-primary fw-bold'>{product.title}</h4>
                         <div className='stars text-warning fs-5 d-flex gap-1'>
                             {renderRating(product.reviews?.[0]?.rating)}
@@ -88,37 +88,34 @@ function ProDetails() {
                         {availableQuntity > 0 && <h6 className='text-primary'>hurry up! only {availableQuntity} products left in stock</h6>}
                         {boughtPro ?
                             <div>
-                                {availableQuntity > 0 ? <button className='add btn btn-success'> in cart <TiShoppingCart className='fs-4' /> </button>
+                                {availableQuntity > 0 ? <button className={`${styles.add} btn btn-success`}> in cart <TiShoppingCart className='fs-4' /> </button>
                                     :
-                                    <button className='add btn btn-danger'> out of stock <TiShoppingCart className='fs-4' /> </button>
+                                    <button className={`${styles.add} btn btn-danger`}> out of stock <TiShoppingCart className='fs-4' /> </button>
                                 }
                             </div>
                             :
-                            availableQuntity > 0 ? <button onClick={() => handelCart(product)} className='add btn btn-primary'>add to cart <TiShoppingCart className='fs-4' /> </button>
+                            availableQuntity > 0 ? <button onClick={() => handelCart(product)} className={`${styles.add} btn btn-primary`}>add to cart <TiShoppingCart className='fs-4' /> </button>
                                 :
-                                <button className='add btn btn-danger'>out of stock <TiShoppingCart className='fs-4' /> </button>
+                                <button className={`${styles.add} btn btn-danger`}>out of stock <TiShoppingCart className='fs-4' /> </button>
                         }
-                        <div className="icons">
+                        <div className={styles.icons}>
                             {favPro ?
-                                <div onClick={() => addFavItem(product)} className="chosen-item">
+                                <div onClick={() => addFavItem(product)} className={styles['chosen-item']}>
                                     <FaHeart className='text-danger' />
                                 </div>
 
                                 :
-                                <div onClick={() => addFavItem(product)} className="fav">
+                                <div onClick={() => addFavItem(product)} className={styles.fav}>
                                     <FaRegHeart />
                                 </div>
                             }
-                            <div className="share">
+                            <div className={styles.share}>
                                 <FaShare />
                             </div>
                         </div>
                     </div>
                 </div>
-                {loadingCat ? <div className='loading-slider'><LoadingSlider /></div> : <Slider name={product.category.replace('-', ' ')} data={productCat} />}
-
-
-
+                {loadingCat ? <div className={styles['loading-slider']}><LoadingSlider /></div> : <Slider name={product.category.replace('-', ' ')} data={productCat} />}
             </div>
         </PagesMotion>
     )
