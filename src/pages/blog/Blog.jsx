@@ -15,7 +15,7 @@ function Blog() {
                 <div className="container my-3">
                     <div className='row main_div d-flex'>
                         <div className="col-12 col-md-4 col-lg-5">
-                            <img src="src/img/main.jpeg" alt="" />
+                            <img src="/src/img/main.jpeg" alt="" />
                         </div>
                         <div className="info col-12 col-md-8 col-lg-7 mt-3 mt-md-1 d-flex flex-column gap-3">
                             <span className='text-uppercase bg-primary text-light py-1 px-2 rounded-3'>featured</span>
