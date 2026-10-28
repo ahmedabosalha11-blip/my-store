@@ -1,4 +1,5 @@
 import './hero.css';
+import heroImage from '../../img/p.png';
 
 function HeroSection() {
   return (
@@ -9,7 +10,7 @@ function HeroSection() {
             <p className='text-black-50'>Experience the perfect blend of crystal-clear sound, seamless productivity on the go, and your favorite cup of coffee to kickstart your day with energy and focus. Designed specifically to complement your modern lifestyle.</p>
           </div>
           <div className="image-box w-75 h-100">
-            <img className='img-fluid' src="src/img/p.png" alt="" />
+            <img className='img-fluid' src={heroImage} alt="" />
           </div>
        </div>
     </div>
