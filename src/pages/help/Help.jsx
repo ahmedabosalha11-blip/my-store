@@ -20,7 +20,7 @@ function Help() {
                     <IoHelpBuoyOutline className='text-primary' />
                     <div>
                         <h4 className='fw-bold mb-0'>help center</h4>
-                        <p className='mb-0 text-black-50'>
+                        <p className='mb-0 text-black-50 capitalize'>
                             we are here to help! find answers to your questions or get in touch with our support team
                         </p>
                     </div>
@@ -33,7 +33,7 @@ function Help() {
                             </div>
                             <div className="col-12 col-md-6 info my-3 my-md-0">
                                 <h3 className="fw-bold">need help? you are in the right place.</h3>
-                                <p className='mb-0 text-black-50'>Whether you have a question about an order, a product, shipping, or anything else, we've got you covered. Browse our help topics below or get in touch with our support team — we're always happy to assist you.</p>
+                                <p className='mb-0 text-black-50 capitalize'>Whether you have a question about an order, a product, shipping, or anything else, we've got you covered. Browse our help topics below or get in touch with our support team — we're always happy to assist you.</p>
                                 <Link className='btn btn-primary mt-3'><BsChatText className="fs-5" /> contact support <FaArrowRightLong /></Link>
                             </div>
                             <div className="col-12 col-md-6 img-box d-none d-md-flex justify-content-end rounded">
@@ -48,7 +48,7 @@ function Help() {
                         <div className="d-flex align-items-center justify-content-between">
                             <div>
                                 <h6 className='mt-1 fw-bold'>orders & shipping</h6>
-                                <p className='mb-0 text-black-50'>Track your order, view shipping details, and learn about delivery times.</p>
+                                <p className='mb-0 text-black-50 capitalize'>Track your order, view shipping details, and learn about delivery times.</p>
                             </div>
                             <FaArrowRightLong className="fs-4 text-primary"/>
                         </div>
@@ -58,7 +58,7 @@ function Help() {
                         <div className="d-flex align-items-center justify-content-between">
                             <div>
                                 <h6 className='mt-1 fw-bold'>payments</h6>
-                                <p className='mb-0 text-black-50'>Find information about payment methods, refunds and failed transactions.</p>
+                                <p className='mb-0 text-black-50 capitalize'>Find information about payment methods, refunds and failed transactions.</p>
                             </div>
                             <FaArrowRightLong className="fs-4 text-primary"/>
                         </div>
@@ -68,7 +68,7 @@ function Help() {
                         <div className="d-flex align-items-center justify-content-between">
                             <div>
                                 <h6 className='mt-1 fw-bold'>returns & exchanges</h6>
-                                <p className='mb-0 text-black-50'>Learn how to return or exchange a product and check our return policy.</p>
+                                <p className='mb-0 text-black-50 capitalize'>Learn how to return or exchange a product and check our return policy.</p>
                             </div>
                             <FaArrowRightLong className="fs-4 text-primary"/>
                         </div>
@@ -78,7 +78,7 @@ function Help() {
                         <div className="d-flex align-items-center justify-content-between">
                             <div>
                                 <h6 className='mt-1 fw-bold'>account & profile</h6>
-                                <p className='mb-0 text-black-50'>Manage your account, update your details, and reset your password.</p>
+                                <p className='mb-0 text-black-50 capitalize'>Manage your account, update your details, and reset your password.</p>
                             </div>
                             <FaArrowRightLong className="fs-4 text-primary"/>
                         </div>
@@ -88,7 +88,7 @@ function Help() {
                         <div className="d-flex align-items-center justify-content-between">
                             <div>
                                 <h6 className='mt-1 fw-bold'>product information</h6>
-                                <p className='mb-0 text-black-50'>Get help with product details, sizes, features and availability.</p>
+                                <p className='mb-0 text-black-50 capitalize'>Get help with product details, sizes, features and availability.</p>
                             </div>
                             <FaArrowRightLong className="fs-4 text-primary"/>
                         </div>
@@ -98,7 +98,7 @@ function Help() {
                         <div className="d-flex align-items-center justify-content-between">
                             <div>
                                 <h6 className='mt-1 fw-bold'>general questions</h6>
-                                <p className='mb-0 text-black-50'>Find answers to common questions about our store and services.</p>
+                                <p className='mb-0 text-black-50 capitalize'>Find answers to common questions about our store and services.</p>
                             </div>
                             <FaArrowRightLong className="fs-4 text-primary"/>
                         </div>

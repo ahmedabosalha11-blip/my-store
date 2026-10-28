@@ -1,4 +1,6 @@
-
+.row p.capitalize {
+    text-transform: capitalize !important;
+}
 /* toast */
 .toast-body{
     display: flex;
