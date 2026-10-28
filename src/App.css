@@ -35,6 +35,8 @@
     border: 1px solid #ccccccb1;
     border-radius: 0 10px 10px 0 ;
     padding: 10px;
+    overflow-x: none !important;
+    overflow-y: auto !important;
 }
 .open{
     left: 0;
