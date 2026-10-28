@@ -33,10 +33,31 @@
     left: -300px;
     transition: .5s;
     border: 1px solid #ccccccb1;
-    border-radius: 0 10px 10px 0 ;
+    border-radius: 0 10px 10px 0;
     padding: 10px;
-    overflow-x: none !important;
+    overflow-x: hidden !important;
     overflow-y: auto !important;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 0 10px 10px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #0d6efd;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #0b5ed7;
+    }
+
+    scrollbar-width: thin;
+    scrollbar-color: #0d6efd #f1f1f1;
 }
 .open{
     left: 0;
