@@ -26,7 +26,7 @@ function Sidebar() {
                 <button onClick={() => setSidebarMood(false)} className="btn btn-outline-primary p-1"><IoClose className="fs-1" /></button>
             </div>
             <hr className="text-black-50 my-4" />
-            <div className="pages d-flex flex-column gap-4 w-100">
+            <div className="pages d-flex flex-column gap-3 w-100">
                 <Link to='/' className={`d-flex align-items-center justify-content-between ${location.pathname == '/' ? 'active_page' : ''}`}>
                     <div className="d-flex align-items-center gap-3">
                         <IoHome className="fs-2" />
