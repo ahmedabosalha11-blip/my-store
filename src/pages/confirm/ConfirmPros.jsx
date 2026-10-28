@@ -194,7 +194,7 @@ function ConfirmPros() {
 
                                             </div>
                                         </div>
-                                        <div className='d-flex align-items-center'>
+                                        <div className='payment-images d-flex align-items-center'>
                                             <img src={visaImage} alt="" />
                                             <img src={meezaImage} alt="" />
                                             <img src={payImage} alt="" />

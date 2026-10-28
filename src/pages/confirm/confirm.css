@@ -170,4 +170,7 @@
     .confirm .shipinng-address .shipping div{
         width: 100% !important;
     }
+    .payment-images{
+        flex-direction: column;
+    }
 }
