@@ -87,7 +87,7 @@ function Sidebar() {
             </div>
             
             <hr className="text-black-50 my-4" />
-            <div className="d-flex flex-column align-items-center mt-5">
+            <div className="d-flex flex-column align-items-center mt-2">
                 <p className="text-black-50">shop smart, live better</p>
                 <div className="d-flex align-items-center justify-content-center gap-2">
                     <div className="social">
