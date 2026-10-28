@@ -16,6 +16,7 @@
     height: 480px;
     overflow: hidden;
     scrollbar-width: thin;
+    scrollbar-color: #0d6efd transparent;
 }
 
 .fav-body .fav-pro-section .pro-box:hover {
@@ -23,7 +24,7 @@
 }
 
 .fav-body .fav-pro-section .pro-box::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
 }
 
 .fav-body .fav-pro-section .pro-box::-webkit-scrollbar-track {
@@ -31,6 +32,7 @@
 }
 
 .fav-body .fav-pro-section .pro-box::-webkit-scrollbar-thumb {
+    background-color: #0d6efd;
     border-radius: 10px;
 }
 

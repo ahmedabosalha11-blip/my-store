@@ -12,10 +12,12 @@ main .cart-body {
     padding-bottom: 10px;
 }
 
+
 main .cart-body .pro-box {
     height: 450px;
     overflow: hidden;
     scrollbar-width: thin;
+    scrollbar-color: #0d6efd transparent;
 }
 
 main .cart-body .pro-box:hover {
@@ -31,6 +33,7 @@ main .cart-body .pro-box::-webkit-scrollbar-track {
 }
 
 main .cart-body .pro-box::-webkit-scrollbar-thumb {
+    background-color: #0d6efd;
     border-radius: 10px;
 }
 
