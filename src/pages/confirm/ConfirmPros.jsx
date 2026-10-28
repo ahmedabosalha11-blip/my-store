@@ -12,6 +12,11 @@ import { useContext, useState } from 'react';
 import { cartContext } from '../../components/cartProvider/CartProvider';
 import { PagesMotion } from '../../components';
 import toast from 'react-hot-toast';
+import visaImage from '../../img/visa-removebg-preview.png';
+import meezaImage from '../../img/meeza-removebg-preview.png';
+import payImage from '../../img/pay-removebg-preview.png';
+import paypalImage from '../../img/paypal-removebg-preview.png';
+
 function ConfirmPros() {
     const { cartItems, setCartItems } = useContext(cartContext);
     const [name, setName] = useState('');
@@ -183,16 +188,16 @@ function ConfirmPros() {
                                             <div className='d-flex align-items-center gap-2 mb-0'>
                                                 <FaCreditCard className='mb-0 fs-3' />
                                                 <div>
-                                                    <p className='mb-0'>credit / debit card</p>
-                                                    <p className='mb-0 text-black-50'>pay securely with your card</p>
+                                                    <p className='mb-0 capitalize'>credit / debit card</p>
+                                                    <p className='mb-0 text-black-50 capitalize'>pay securely with your card</p>
                                                 </div>
 
                                             </div>
                                         </div>
                                         <div className='d-flex align-items-center'>
-                                            <img src="src/img/visa-removebg-preview.png" alt="" />
-                                            <img src="src/img/meeza-removebg-preview.png" alt="" />
-                                            <img src="src/img/pay-removebg-preview.png" alt="" />
+                                            <img src={visaImage} alt="" />
+                                            <img src={meezaImage} alt="" />
+                                            <img src={payImage} alt="" />
                                         </div>
                                     </label>
                                     <label className='d-flex justify-content-between align-items-center px-3 py-2' htmlFor="cash">
@@ -201,8 +206,8 @@ function ConfirmPros() {
                                             <div className='d-flex align-items-center gap-2 mb-0'>
                                                 <RiCashLine className='mb-0 fs-2' />
                                                 <div>
-                                                    <p className='mb-0'>cash on delivery</p>
-                                                    <p className='mb-0 text-black-50'>pay when you receive your order</p>
+                                                    <p className='mb-0 capitalize'>cash on delivery</p>
+                                                    <p className='mb-0 text-black-50 capitalize'>pay when you receive your order</p>
                                                 </div>
 
                                             </div>
@@ -215,20 +220,20 @@ function ConfirmPros() {
                                             <div className='d-flex align-items-center gap-2 mb-0'>
                                                 <LuWallet className='mb-0 fs-3' />
                                                 <div>
-                                                    <p className='mb-0'>online payment (e-wallet)</p>
-                                                    <p className='mb-0 text-black-50'>pay with your digital wallet </p>
+                                                    <p className='mb-0 capitalize'>online payment (e-wallet)</p>
+                                                    <p className='mb-0 text-black-50 capitalize'>pay with your digital wallet </p>
                                                 </div>
 
                                             </div>
                                         </div>
-                                        <img className='paypal' src="src\img\paypal-removebg-preview.png" alt="" />
+                                        <img className='paypal' src={paypalImage} alt="" />
                                     </label>
                                 </form>
                             </div>
                             <div className="summary mt-3">
                                 <div className="summary-heading d-flex align-items-center justify-content-between">
                                     <h6 className='fw-bold mb-0'>order summary</h6>
-                                    <p className='mb-0 text-black-50'>({cartItems.length}) items</p>
+                                    <p className='mb-0 text-black-50 capitalize'>({cartItems.length}) items</p>
                                 </div>
                                 <div className="pro-section mt-1">
                                     {cartItems.length > 0 ?
@@ -239,8 +244,8 @@ function ConfirmPros() {
                                                         <img src={pro.newpro.images.length > 1 ? pro.newpro.images[1] : pro.newpro.images[0]} alt="" />
                                                     </div>
                                                     <div className="pro-info">
-                                                        <p className='mb-0 fw-bold'>{pro.newpro.title}</p>
-                                                        <p className='mb-0 text-black-50'>count ({pro.count})</p>
+                                                        <p className='mb-0 fw-bold capitalize'>{pro.newpro.title}</p>
+                                                        <p className='mb-0 text-black-50 capitalize'>count ({pro.count})</p>
                                                     </div>
                                                 </div>
                                                 <p className='mb-0 fw-bold'>${pro.newpro.price}</p>
@@ -249,25 +254,25 @@ function ConfirmPros() {
                                         :
                                         <div className='empty'>
                                             <TbShoppingCartOff className='empty-icon text-primary' />
-                                            <h4>your cart is empty</h4>
-                                            <p className='text-primary'>start shopping and find something you love</p>
+                                            <h4 className='capitalize'>your cart is empty</h4>
+                                            <p className='text-primary capitalize'>start shopping and find something you love</p>
                                         </div>
                                     }
 
                                 </div>
                                 <hr className='text-black-50 my-1' />
                                 <div className='d-flex align-items-center justify-content-between mt-1'>
-                                    <p className='text-black-50 mb-0'>subtotal</p>
+                                    <p className='text-black-50 mb-0 capitalize'>subtotal</p>
                                     <p className='mb-0 fw-bold'>${TotalPrice().toFixed(2)}</p>
                                 </div>
                                 <div className='d-flex align-items-center justify-content-between mt-1 mb-2'>
-                                    <p className='text-black-50 mt-1 mb-0'>discount (10%) if order over $100</p>
+                                    <p className='text-black-50 mt-1 mb-0 capitalize'>discount (10%) if order over $100</p>
                                     <p className='mb-0 fw-bold'>${TotalPrice() >= 100 ? (TotalPrice() * 10 / 100).toFixed(2) : <span>0</span>}</p>
                                 </div>
                                 <hr className='text-black-50 my-1' />
                                 <div className='d-flex align-items-center justify-content-between mt-1'>
-                                    <p className='text-black-50 mt-1 mb-0 fw-bold'>total</p>
-                                    <p className='mb-0 fw-bold text-primary fs-4'>${TotalPrice() >= 100 ? (TotalPrice() - (TotalPrice() * 10 / 100)).toFixed(2) : <span>{TotalPrice().toFixed(2)}</span>}</p>
+                                    <p className='text-black-50 mt-1 mb-0 fw-bold capitalize'>total</p>
+                                    <p className='mb-0 fw-bold text-primary fs-4 '>${TotalPrice() >= 100 ? (TotalPrice() - (TotalPrice() * 10 / 100)).toFixed(2) : <span>{TotalPrice().toFixed(2)}</span>}</p>
                                 </div>
                             </div>
                             <div className="review-confirm mb-3 d-lg-none mt-3">

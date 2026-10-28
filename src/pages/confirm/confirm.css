@@ -1,3 +1,6 @@
+.row p.capitalize {
+    text-transform: capitalize !important;
+}
 .confirm {
     margin-top: 170px;
 }
