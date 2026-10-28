@@ -7,6 +7,7 @@ import { FaRegHeart, FaRegNewspaper, FaKey, FaExclamationCircle } from "react-ic
 import { IoLocationOutline } from "react-icons/io5";
 import { BsFillBox2HeartFill } from "react-icons/bs";
 import { TfiMapAlt } from "react-icons/tfi";
+import avatarImage from '../../img/avatar.jpeg';
 
 function My_Account() {
     return (
@@ -21,7 +22,7 @@ function My_Account() {
                         <div className="profile col-12 col-lg-3 d-flex flex-column gap-3 align-items-center ">
                             <h4>profile summary</h4>
                             <div className="image-box">
-                                <img src="src/img/avatar.jpeg" alt="" />
+                                <img src={avatarImage} alt="" />
                             </div>
                             <h5>ahmed abosalha</h5>
                             <p className="text-black-50 mb-0"><MdOutlineMessage /> @ahmed.net</p>
@@ -80,19 +81,19 @@ function My_Account() {
                                                 <tr>
                                                     <td className='text-center p-2'>order001</td>
                                                     <td className='text-center p-2'>0ct 20,2026</td>
-                                                    <td className='text-center p-2'><span className='bg-success py-1 px-2 rounded-4'>shipped</span></td>                                                </tr>
+                                                    <td className='text-center p-2'><span className='bg-success py-1 px-2 rounded-4'>shipped</span></td>                                       </tr>
                                                 <tr>
                                                     <td className='text-center p-2'>order001</td>
                                                     <td className='text-center p-2'>0ct 20,2026</td>
-                                                    <td className='text-center p-2'><span className='bg-warning py-1 px-2 rounded-4'>processing</span></td>                                                </tr>
+                                                    <td className='text-center p-2'><span className='bg-warning py-1 px-2 rounded-4'>processing</span></td>                                       </tr>
                                                 <tr>
                                                     <td className='text-center p-2'>order001</td>
                                                     <td className='text-center p-2'>0ct 20,2026</td>
-                                                    <td className='text-center p-2'><span className='bg-danger py-1 px-2 rounded-4'>cancelled</span></td>                                                </tr>
+                                                    <td className='text-center p-2'><span className='bg-danger py-1 px-2 rounded-4'>cancelled</span></td>                                       </tr>
                                                 <tr>
                                                     <td className='text-center p-2'>order001</td>
                                                     <td className='text-center p-2'>0ct 20,2026</td>
-                                                    <td className='text-center p-2'><span className='bg-success py-1 px-2 rounded-4'>shipped</span></td>                                                </tr>
+                                                    <td className='text-center p-2'><span className='bg-success py-1 px-2 rounded-4'>shipped</span></td>                                       </tr>
                                             </tbody>
                                         </table>
                                     </div>

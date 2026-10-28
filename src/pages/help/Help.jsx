@@ -1,6 +1,6 @@
 import { IoHelpBuoyOutline } from "react-icons/io5";
 import './help.css';
-import { FaArrowRightLong, FaTruckFast } from 'react-icons/fa6';
+import { FaArrowRightLong } from 'react-icons/fa6';
 import { BsChatText } from "react-icons/bs";
 import { PiShippingContainerBold } from "react-icons/pi";
 import { MdPayment } from "react-icons/md";
@@ -8,10 +8,9 @@ import { MdCurrencyExchange } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import { FaClipboardCheck } from "react-icons/fa6";
 import { IoDocumentTextOutline } from "react-icons/io5";
-
-import { RiSecurePaymentFill } from 'react-icons/ri';
 import { PagesMotion } from '../../components';
 import { Link } from "react-router-dom";
+import helpImage from '../../img/Gemini_Generated_Image_l6o1g3l6o1g3l6o1.jpg';
 
 function Help() {
     return (
@@ -30,7 +29,7 @@ function Help() {
                     <div className="col description  ">
                         <div className="row">
                             <div className="col-12 col-md-6 img-box d-md-none rounded">
-                                <img className='w-100 rounded' src="src/img/Gemini_Generated_Image_l6o1g3l6o1g3l6o1.jpg" alt="" />
+                                <img className='w-100 rounded' src={helpImage} alt="" />
                             </div>
                             <div className="col-12 col-md-6 info my-3 my-md-0">
                                 <h3 className="fw-bold">need help? you are in the right place.</h3>
@@ -38,7 +37,7 @@ function Help() {
                                 <Link className='btn btn-primary mt-3'><BsChatText className="fs-5" /> contact support <FaArrowRightLong /></Link>
                             </div>
                             <div className="col-12 col-md-6 img-box d-none d-md-flex justify-content-end rounded">
-                                <img className='w-75 rounded' src="src/img/Gemini_Generated_Image_l6o1g3l6o1g3l6o1.jpg" alt="" />
+                                <img className='w-75 rounded' src={helpImage} alt="" />
                             </div>
                         </div>
                     </div>
@@ -104,7 +103,6 @@ function Help() {
                             <FaArrowRightLong className="fs-4 text-primary"/>
                         </div>
                     </div>
-
                 </div>
             </div>
         </PagesMotion>

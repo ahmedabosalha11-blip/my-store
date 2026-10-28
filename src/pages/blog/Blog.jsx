@@ -4,6 +4,11 @@ import { MdDateRange } from "react-icons/md";
 import { IoBookmarkOutline } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { PagesMotion } from '../../components';
+import mainImage from '../../img/main.jpeg';
+import headphoneImage from '../../img/headphone.jpeg';
+import shoseImage from '../../img/shose.jpeg';
+import bagImage from '../../img/bag.jpeg';
+
 function Blog() {
     return (
         <PagesMotion>
@@ -15,7 +20,7 @@ function Blog() {
                 <div className="container my-3">
                     <div className='row main_div d-flex'>
                         <div className="col-12 col-md-4 col-lg-5">
-                            <img src="/src/img/main.jpeg" alt="" />
+                            <img src={mainImage} alt="" />
                         </div>
                         <div className="info col-12 col-md-8 col-lg-7 mt-3 mt-md-1 d-flex flex-column gap-3">
                             <span className='text-uppercase bg-primary text-light py-1 px-2 rounded-3'>featured</span>
@@ -44,7 +49,7 @@ function Blog() {
                     <div className="articals gap-2 row">
                         <div className="arti col-12 col-md-3 flex-grow-1 d-flex flex-column gap-2">
                             <div className="image-box">
-                                <img src="src/img/headphone.jpeg" alt="" />
+                                <img src={headphoneImage} alt="" />
                             </div>
                             <p className="text-primary mb-0 fw-bold">technology</p>
                             <h6 className='mb-0 fw-bold'>best headphones for music,work and travel</h6>
@@ -52,7 +57,7 @@ function Blog() {
                         </div>
                         <div className="arti col-12 col-md-3 flex-grow-1 d-flex flex-column gap-2">
                             <div className="image-box">
-                                <img src="src/img/shose.jpeg" alt="" />
+                                <img src={shoseImage} alt="" />
                             </div>
                             <p className="text-primary mb-0 fw-bold">fashion</p>
                             <h6 className='mb-0 fw-bold'>top 5 sneakers for everyday style</h6>
@@ -60,7 +65,7 @@ function Blog() {
                         </div>
                         <div className="arti col-12 col-md-3 flex-grow-1 d-flex flex-column gap-2">
                             <div className="image-box">
-                                <img src="src/img/bag.jpeg" alt="" />
+                                <img src={bagImage} alt="" />
                             </div>
                             <p className="text-primary mb-0 fw-bold">travel</p>
                             <h6 className='mb-0 fw-bold'>must have travel bags and accessories</h6>

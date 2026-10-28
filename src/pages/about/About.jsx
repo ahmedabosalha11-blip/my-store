@@ -5,8 +5,8 @@ import { FaArrowRightLong , FaTruckFast  } from "react-icons/fa6";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
-
 import { PagesMotion } from '../../components';
+import aboutImage from '../../img/WhatsApp Image 2026-10-20 at 7.01.53 PM.jpeg';
 
 function About() {
     return (
@@ -25,7 +25,7 @@ function About() {
                     <div className="col description  ">
                         <div className="row">
                             <div className="col-12 col-md-6 img-box d-md-none rounded">
-                                <img className='w-100 rounded' src="src/img/WhatsApp Image 2026-10-20 at 7.01.53 PM.jpeg" alt="" />
+                                <img className='w-100 rounded' src={aboutImage} alt="" />
                             </div>
                             <div className="col-12 col-md-6 info my-3 my-md-0">
                                 <h3 className='fw-bold'>shopping made simple.</h3>
@@ -33,7 +33,7 @@ function About() {
                                 <Link to='/' className='btn btn-primary mt-3'>explore products <FaArrowRightLong /></Link>
                             </div>
                             <div className="col-12 col-md-6 img-box d-none d-md-flex justify-content-end rounded">
-                                <img className='w-75 rounded' src="src/img/WhatsApp Image 2026-10-20 at 7.01.53 PM.jpeg" alt="" />
+                                <img className='w-75 rounded' src={aboutImage} alt="" />
                             </div>
                         </div>
                     </div>
