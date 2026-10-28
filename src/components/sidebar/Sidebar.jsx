@@ -4,8 +4,9 @@ import { IoBagHandle, IoClose, IoHome } from "react-icons/io5"
 import { FaAngleRight } from "react-icons/fa6";
 import { FaBloggerB , FaHeart  } from "react-icons/fa";
 import { FaInfoCircle, FaEnvelope, FaUser, FaQuestionCircle, FaFacebookF , FaYoutube , FaInstagram   } from "react-icons/fa";
-import { MdDarkMode } from "react-icons/md";
+import { MdDarkMode, MdOutlineLiveHelp } from "react-icons/md";
 import { FaXTwitter , FaCartShopping  } from "react-icons/fa6";
+import { TbHelpSquareRoundedFilled } from "react-icons/tb";
 
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom"
@@ -68,25 +69,23 @@ function Sidebar() {
                     </div>
                     <FaAngleRight />
                 </Link>
+                <Link to='/help' className={`d-flex align-items-center justify-content-between ${location.pathname == '/help' ? 'active_page' : ''}`}>
+                    <div className="d-flex align-items-center gap-3">
+                        <TbHelpSquareRoundedFilled  className="fs-2" />
+                        <p className="mb-0">help</p>
+                    </div>
+                    <FaAngleRight />
+                </Link>
+                <Link to='/about' className={`d-flex align-items-center justify-content-between ${location.pathname == '/about' ? 'active_page' : ''}`}>
+                    <div className="d-flex align-items-center gap-3">
+                        <FaInfoCircle  className="fs-2" />
+                        <p className="mb-0">about</p>
+                    </div>
+                    <FaAngleRight />
+                </Link>
 
             </div>
-            <hr className="text-black-50 my-4" />
-            <div className='d-flex align-items-center justify-content-between '>
-                <div className="d-flex align-items-center gap-3">
-                    <MdDarkMode className="fs-1" />
-                    <p className="mb-0">dark mood</p>
-                </div>
-                <div className="form-check mb-0 form-switch">
-                    <input
-                        className="form-check-input"
-                        type="checkbox"
-                        role="switch"
-                        id="flexSwitchCheckChecked"
-                        defaultChecked
-                        style={{ transform: 'scale(1.4)', cursor: 'pointer' }}
-                    />
-                </div>
-            </div>
+            
             <hr className="text-black-50 my-4" />
             <div className="d-flex flex-column align-items-center mt-5">
                 <p className="text-black-50">shop smart, live better</p>

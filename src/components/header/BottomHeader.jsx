@@ -64,8 +64,8 @@ function BottomHeader() {
         </div>
         <div className="icons-section d-flex align-items-center ms-4 gap-2">
             <HiMiniBars4 onClick={()=>setSidebarMood(!sidebarMood)} className='d-md-none fs-5 text-light'/>
-            <Link to='/help'><MdOutlineLiveHelp className='fs-5 text-light mb-1'/></Link>
-            <Link to='/about'><FaInfoCircle className='fs-5 text-light mb-1'/></Link>
+            <Link to='/help'><MdOutlineLiveHelp className='fs-5 d-none d-md-block text-light mb-1'/></Link>
+            <Link to='/about'><FaInfoCircle className='fs-5 d-none d-md-block text-light mb-1'/></Link>
         </div>
       </div>
     </div>
