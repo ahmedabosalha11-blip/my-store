@@ -107,7 +107,7 @@
     }
 
     .pro-details .images {
-        width: 80% !important;
+        width: 100% !important;
         height: 300px;
         display: flex;
         flex-direction: column;
