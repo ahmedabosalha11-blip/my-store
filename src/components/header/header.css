@@ -121,9 +121,21 @@
     padding: 0;
     height: 350px;
     overflow: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bs-primary) transparent;
 }
 .bottom-header .dropdown .dropdown-menu:hover{
     overflow-y: auto;
+}
+.bottom-header .dropdown .dropdown-menu::-webkit-scrollbar{
+    width: 5px;
+}
+.bottom-header .dropdown .dropdown-menu::-webkit-scrollbar-track{
+    background: transparent;
+}
+.bottom-header .dropdown .dropdown-menu::-webkit-scrollbar-thumb{
+    background-color: var(--bs-primary);
+    border-radius: 3px;
 }
 .bottom-header .dropdown .dropdown-menu li{
     

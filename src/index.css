@@ -4,6 +4,20 @@
     text-transform: capitalize !important;
     box-sizing: border-box;
 }
+html{
+    scrollbar-width: thin;
+    scrollbar-color: var(--bs-primary) transparent;
+}
+html::-webkit-scrollbar{
+    width: 8px;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--bs-primary);
+    border-radius: 4px;
+}
 a{
     text-decoration: none;
 }
